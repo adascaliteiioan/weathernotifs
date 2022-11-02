@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_app"
+    app:startDestination="@id/weatherNotification">
+
+    <fragment
+        android:id="@+id/weatherNotification"
+        android:name="com.ai.weathernotifications.ui.notifications.WeatherNotificationFragment"
+        android:label="fragment_item_list"
+        tools:layout="@layout/fragment_item_list" >
+
+        <action
+            android:id="@+id/action_weatherNotification_to_weatherNotificationDetails"
+            app:destination="@id/weatherNotificationDetailsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/weatherNotificationDetailsFragment"
+        android:name="com.ai.weathernotifications.ui.notificationdetails.WeatherNotificationDetailsFragment"
+        android:label="fragment_weather_notification_details"
+        tools:layout="@layout/fragment_weather_notification_details" >
+        <argument
+            android:name="notificationId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.ai.weathernotifications.ui.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
