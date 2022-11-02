@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        tools:context=".ui.notificationdetails.WeatherNotificationDetailsFragment">
+
+        <ImageView
+            android:id="@+id/eventIv"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_baseline_play_circle_outline_24" />
+
+        <TextView
+            android:id="@+id/timeHintTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/notification_details_time_interval"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/eventIv" />
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/timeHintTv"
+            app:layout_constraintTop_toTopOf="@id/timeHintTv" />
+
+        <TextView
+            android:id="@+id/severityHintTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/notification_details_severity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/timeHintTv" />
+
+        <TextView
+            android:id="@+id/severityTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/severityHintTv"
+            app:layout_constraintTop_toTopOf="@id/severityHintTv" />
+
+        <TextView
+            android:id="@+id/certaintyHintTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/notification_details_certainty"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/severityHintTv" />
+
+        <TextView
+            android:id="@+id/certaintyTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/certaintyHintTv"
+            app:layout_constraintTop_toTopOf="@id/certaintyHintTv" />
+
+        <TextView
+            android:id="@+id/urgencyHintTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/notification_details_urgency"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/certaintyHintTv" />
+
+        <TextView
+            android:id="@+id/urgencyTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/urgencyHintTv"
+            app:layout_constraintTop_toTopOf="@id/urgencyHintTv" />
+
+        <TextView
+            android:id="@+id/sourceHintTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/notifcation_details_source"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/urgencyHintTv" />
+
+        <TextView
+            android:id="@+id/sourceTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/sourceHintTv"
+            app:layout_constraintTop_toTopOf="@id/sourceHintTv" />
+
+        <TextView
+            android:id="@+id/descriptionHintTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/notification_details_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sourceHintTv" />
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/descriptionHintTv"
+            app:layout_constraintTop_toTopOf="@id/descriptionHintTv" />
+
+        <TextView
+            android:id="@+id/affectedZonesHintTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/notification_details_affected_zones"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descriptionTv" />
+
+        <TextView
+            android:id="@+id/affectedZonesTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/affectedZonesHintTv"
+            app:layout_constraintTop_toTopOf="@id/affectedZonesHintTv" />
+
+        <TextView
+            android:id="@+id/instructionsTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:padding="4dp"
+            tools:text="Instructiuni"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/affectedZonesTv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

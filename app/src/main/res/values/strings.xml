@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WeatherNotifications</string>
+    <string name="notification_details_time_interval">Time interval:</string>
+    <string name="notification_details_severity">Severity:</string>
+    <string name="notification_details_certainty">Certainty:</string>
+    <string name="notification_details_urgency">Urgency:</string>
+    <string name="notifcation_details_source">Source:</string>
+    <string name="notification_details_description">Description:</string>
+    <string name="notification_details_affected_zones">Affected zones:</string>
+    <string name="notifications">Notifications</string>
+    <string name="settings">Settings</string>
+    <string name="settings_text_to_parse">\@My Very First Commit@ $by IoanA$ #s. f.# (#Med.#) This fixes most important bugs #2022-10-26# @Weather App@</string>
+</resources>
